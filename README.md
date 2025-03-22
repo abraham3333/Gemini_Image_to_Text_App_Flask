@@ -31,7 +31,7 @@ The Gemini Image to Text App allows users to interact with the Google Gemini API
 1.  Clone the repository:
 ```
 bash
-    git clone <repository_url>
+    git clone https://github.com/abraham3333/Gemini_Image_to_Text_App_Flask.git
     
 ```
 2.  Navigate to the project directory:
