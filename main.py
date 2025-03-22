@@ -6,9 +6,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from flask import Flask, jsonify, request, send_file, send_from_directory
 
 # 🔥 FILL THIS OUT FIRST! 🔥
-# Get your Gemini API key by:
-# - Selecting "Add Gemini API" in the "Project IDX" panel in the sidebar
-# - Or by visiting https://g.co/ai/idxGetGeminiKey
+# Get your Gemini API key by : https://aistudio.google.com/apikey
+
 os.environ["GOOGLE_API_KEY"] = "GOOGLE_API_KEY"; 
 
 app = Flask(__name__)
@@ -25,7 +24,7 @@ def generate_api():
         if os.environ["GOOGLE_API_KEY"] != 'GOOGLE_API_KEY':
             return jsonify({ "error": '''
                 To get started, get an API key at
-                https://g.co/ai/idxGetGeminiKey and enter it in
+                https://aistudio.google.com/apikey and enter it in
                 main.py
                 '''.replace('\n', '') })
         try:
